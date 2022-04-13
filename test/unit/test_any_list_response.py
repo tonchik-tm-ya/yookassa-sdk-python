@@ -126,7 +126,10 @@ class TestAnyListResponse(unittest.TestCase):
                     },
                     "authorization_details": {
                         "rrn": "rrn",
-                        "auth_code": "auth_code"
+                        "auth_code": "auth_code",
+                        "three_d_secure": {
+                            "applied": True
+                        }
                     },
                     "transfers": [
                         {
@@ -135,7 +138,11 @@ class TestAnyListResponse(unittest.TestCase):
                                 "value": 100.01,
                                 "currency": "RUB"
                             },
-                            "status": "succeeded"
+                            "status": "succeeded",
+                            "metadata": {
+                                "meta1": 'metatest 1',
+                                "meta2": 'metatest 2'
+                            }
                         }
                     ],
                     "income_amount": {

@@ -113,7 +113,7 @@ setup(
     url="https://github.com/yoomoney/yookassa-sdk-python",
     package_dir={"": "src"},
     packages=find_packages('src'),
-    install_requires=["requests", "urllib3", "distro", "deprecated"],
+    install_requires=["requests", "urllib3", "netaddr", "distro", "deprecated"],
     zip_safe=False,
     license="MIT",
     classifiers=[
@@ -123,6 +123,7 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8"
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9"
     ]
 )

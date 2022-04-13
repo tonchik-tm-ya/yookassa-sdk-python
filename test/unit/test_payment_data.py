@@ -25,6 +25,8 @@ from yookassa.domain.models.payment_data.request.payment_data_qiwi import \
     PaymentDataQiwi as RequestPaymentDataQiwi
 from yookassa.domain.models.payment_data.request.payment_data_sberbank import \
     PaymentDataSberbank as RequestPaymentDataSberbank
+from yookassa.domain.models.payment_data.request.payment_data_sbp import \
+    PaymentDataSbp as RequestPaymentDataSbp
 from yookassa.domain.models.payment_data.response.credit_card import CreditCard as ResponseCreditCard
 from yookassa.domain.models.payment_data.response.payment_data_alfabank import \
     PaymentDataAlfabank as ResponsePaymentDataAlfabank
@@ -48,6 +50,8 @@ from yookassa.domain.models.payment_data.response.payment_data_qiwi import \
     PaymentDataQiwi as ResponsePaymentDataQiwi
 from yookassa.domain.models.payment_data.response.payment_data_sberbank import \
     PaymentDataSberbank as ResponsePaymentDataSberbank
+from yookassa.domain.models.payment_data.response.payment_data_sbp import \
+    PaymentDataSbp as ResponsePaymentDataSbp
 
 
 class TestPaymentData(unittest.TestCase):
@@ -228,7 +232,7 @@ class TestPaymentData(unittest.TestCase):
             'vat_data': {
                 'type': VatDataType.MIXED,
                 'rate': VatDataRate.RATE_20,
-                'amount': {'value': 10.0, 'currency': Currency.RUB}
+                'amount': {'value': '10.00', 'currency': Currency.RUB}
             }
         }, dict(payment_data))
 
@@ -253,7 +257,7 @@ class TestPaymentData(unittest.TestCase):
             'vat_data': {
                 'type': VatDataType.MIXED,
                 'rate': VatDataRate.RATE_20,
-                'amount': {'value': 10.0, 'currency': Currency.RUB}
+                'amount': {'value': '10.00', 'currency': Currency.RUB}
             }
         }, dict(payment_data))
 
@@ -304,3 +308,14 @@ class TestPaymentData(unittest.TestCase):
     def test_psb_cast(self):
         payment_data = ResponsePaymentDataPsb()
         self.assertEqual({'type': PaymentMethodType.PSB}, dict(payment_data))
+
+    def test_sbp_cast(self):
+        payment_data = RequestPaymentDataSbp()
+        payment_data.type = PaymentMethodType.SBP
+
+        self.assertEqual({'type': PaymentMethodType.SBP}, dict(payment_data))
+
+        payment_data = ResponsePaymentDataSbp()
+        payment_data.type = PaymentMethodType.SBP
+
+        self.assertEqual({'type': PaymentMethodType.SBP}, dict(payment_data))
