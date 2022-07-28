@@ -59,6 +59,7 @@ class TestWebhook(unittest.TestCase):
 
             self.assertIsInstance(wh, WebhookResponse)
             self.assertEqual(wh.event, "payment.succeeded")
+            self.assertEqual(wh.url, "https://www.merchant-website.com/notification_url")
 
             params = {
                 "event": "payment.succeeded",
@@ -68,6 +69,7 @@ class TestWebhook(unittest.TestCase):
 
             self.assertIsInstance(wh, WebhookResponse)
             self.assertEqual(wh.event, "payment.succeeded")
+            self.assertEqual(wh.url, "https://www.merchant-website.com/notification_url")
 
         with self.assertRaises(TypeError):
             Webhook.add('invalid data')

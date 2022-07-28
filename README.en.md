@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/yoomoney/yookassa-sdk-python.svg?branch=master)](https://travis-ci.org/yoomoney/yookassa-sdk-python)
 [![Latest Stable Version](https://img.shields.io/pypi/v/yookassa.svg)](https://pypi.org/project/yookassa/)
 [![Total Downloads](https://img.shields.io/pypi/dm/yookassa.svg)](https://pypi.org/project/yookassa/)
-[![License](https://img.shields.io/pypi/l/yookassa.svg)](https://github.com/yoomoney/yookassa-sdk-python)
+[![License](https://img.shields.io/pypi/l/yookassa.svg)](https://git.yoomoney.ru/projects/SDK/repos/yookassa-sdk-python)
 
-[Russian](https://github.com/yoomoney/yookassa-sdk-python/blob/master/README.md) | English
+[Russian](README.md) | English
 
 This product is used for managing payments under [The YooKassa API](https://yookassa.ru/en/developers/api)
 For usage by those who implemented YooKassa using the API method.
@@ -90,29 +90,29 @@ Configuration.configure_user_agent(
 
 ## Examples of using the API SDK
 
-#### [YooKassa SDK Settings](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md)
-* [Authentication](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md#Аутентификация)
-* [Statistics about the environment used](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md#Статистические-данные-об-используемом-окружении)
-* [Getting information about the store](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md#Получение-информации-о-магазине)
-* [Working with Webhook](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md#Работа-с-Webhook)
-* [Notifications](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/01-configuration.md#Входящие-уведомления)
+#### [YooKassa SDK Settings](./docs/examples/01-configuration.md)
+* [Authentication](./docs/examples/01-configuration.md#Аутентификация)
+* [Statistics about the environment used](./docs/examples/01-configuration.md#Статистические-данные-об-используемом-окружении)
+* [Getting information about the store](./docs/examples/01-configuration.md#Получение-информации-о-магазине)
+* [Working with Webhook](./docs/examples/01-configuration.md#Работа-с-Webhook)
+* [Notifications](./docs/examples/01-configuration.md#Входящие-уведомления)
 
-#### [Working with payments](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md)
-* [Request to create a payment](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Запрос-на-создание-платежа)
-* [Request to create a payment via the builder](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Запрос-на-создание-платежа-через-билдер)
-* [Request for partial payment confirmation](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Запрос-на-частичное-подтверждение-платежа)
-* [Request to cancel an incomplete payment](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Запрос-на-отмену-незавершенного-платежа)
-* [Get payment information](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Получить-информацию-о-платеже)
-* [Get a list of payments with filtering](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/02-payments.md#Получить-список-платежей-с-фильтрацией)
+#### [Working with payments](./docs/examples/02-payments.md)
+* [Request to create a payment](./docs/examples/02-payments.md#Запрос-на-создание-платежа)
+* [Request to create a payment via the builder](./docs/examples/02-payments.md#Запрос-на-создание-платежа-через-билдер)
+* [Request for partial payment confirmation](./docs/examples/02-payments.md#Запрос-на-частичное-подтверждение-платежа)
+* [Request to cancel an incomplete payment](./docs/examples/02-payments.md#Запрос-на-отмену-незавершенного-платежа)
+* [Get payment information](./docs/examples/02-payments.md#Получить-информацию-о-платеже)
+* [Get a list of payments with filtering](./docs/examples/02-payments.md#Получить-список-платежей-с-фильтрацией)
 
-#### [Working with refunds](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/03-refunds.md)
-* [Request to create a refund](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/03-refunds.md#Запрос-на-создание-возврата)
-* [Request to create a refund via the builder](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/03-refunds.md#Запрос-на-создание-возврата-через-билдер)
-* [Get refund information](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/03-refunds.md#Получить-информацию-о-возврате)
-* [Get a list of returns with filtering](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/03-refunds.md#Получить-список-возвратов-с-фильтрацией)
+#### [Working with refunds](./docs/examples/03-refunds.md)
+* [Request to create a refund](./docs/examples/03-refunds.md#Запрос-на-создание-возврата)
+* [Request to create a refund via the builder](./docs/examples/03-refunds.md#Запрос-на-создание-возврата-через-билдер)
+* [Get refund information](./docs/examples/03-refunds.md#Получить-информацию-о-возврате)
+* [Get a list of returns with filtering](./docs/examples/03-refunds.md#Получить-список-возвратов-с-фильтрацией)
 
-#### [Working with receipts](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/04-receipts.md)
-* [Request to create a receipt](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/04-receipts.md#Запрос-на-создание-чека)
-* [Request to create a receipt via the builder](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/04-receipts.md#Запрос-на-создание-чека-через-билдер)
-* [Get information about the receipt](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/04-receipts.md#Получить-информацию-о-чеке)
-* [Get a list of receipts with filtering](https://github.com/yoomoney/yookassa-sdk-python/blob/master/docs/examples/04-receipts.md#Получить-список-чеков-с-фильтрацией)
+#### [Working with receipts](./docs/examples/04-receipts.md)
+* [Request to create a receipt](./docs/examples/04-receipts.md#Запрос-на-создание-чека)
+* [Request to create a receipt via the builder](./docs/examples/04-receipts.md#Запрос-на-создание-чека-через-билдер)
+* [Get information about the receipt](./docs/examples/04-receipts.md#Получить-информацию-о-чеке)
+* [Get a list of receipts with filtering](./docs/examples/04-receipts.md#Получить-список-чеков-с-фильтрацией)

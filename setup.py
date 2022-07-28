@@ -12,9 +12,9 @@ long_description = """
 [![Build Status](https://travis-ci.org/yoomoney/yookassa-sdk-python.svg?branch=master)](https://travis-ci.org/yoomoney/yookassa-sdk-python)
 [![Latest Stable Version](https://img.shields.io/pypi/v/yookassa.svg)](https://pypi.org/project/yookassa/)
 [![Total Downloads](https://img.shields.io/pypi/dm/yookassa.svg)](https://pypi.org/project/yookassa/)
-[![License](https://img.shields.io/pypi/l/yookassa.svg)](https://github.com/yoomoney/yookassa-sdk-python)
+[![License](https://img.shields.io/pypi/l/yookassa.svg)](https://git.yoomoney.ru/projects/SDK/repos/yookassa-sdk-python)
 
-[Russian](https://github.com/yoomoney/yookassa-sdk-python/blob/master/README.md) | English
+[Russian](README.md) | English
 
 This product is used for managing payments under [The YooKassa API](https://yookassa.ru/en/developers/api)
 For usage by those who implemented YooKassa using the API method.
@@ -110,7 +110,7 @@ setup(
     description="YooKassa API SDK Python Library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yoomoney/yookassa-sdk-python",
+    url="https://git.yoomoney.ru/projects/SDK/repos/yookassa-sdk-python",
     package_dir={"": "src"},
     packages=find_packages('src'),
     install_requires=["requests", "urllib3", "netaddr", "distro", "deprecated"],
